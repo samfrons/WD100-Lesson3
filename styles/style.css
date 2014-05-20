@@ -1,0 +1,235 @@
+@font-face {
+	font-family: 'AlphaMack AOE', script;
+	src: url(fonts/ALPHMA.TTF);
+}
+
+* {
+    font-family: 'Helvetica Neue' , sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    background: url(http://subtlepatterns.com/patterns/ps_neutral.png);
+    height: 100%;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+}
+
+header {
+    position: fixed !important;
+    background: url(../images/congruent_outline.png);
+    width: 100%;
+    color: white;
+    text-align: center;
+    opacity: .95;
+    z-index: 1;
+}
+
+header h5 {
+    font-weight: 400;
+    margin: 0;
+    padding: 1em 0 1em 0;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1440px;
+    padding: 5em 2em 2em 2em;
+}
+
+.welcome {
+   color: gray;
+}
+
+.row {
+    display: block;
+}
+
+.content {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #c5f4f4;
+    background-image: linear-gradient(white 2px, transparent 2px),
+				linear-gradient(90deg, white 2px, transparent 2px),
+				linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+				linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    border: 3px solid #73cfe4;
+    height: 60%;
+    margin: 0 0 1em 0;
+}
+
+.box div {
+    display: block;
+    margin: 5%;
+    text-align: center;
+}
+
+.box span {
+    font-size: 4em;
+    font-weight: 100;
+}
+
+.box h1 {
+    background-color: rgba(232, 98, 0, 0.5);
+    color: white;
+    font-weight: 100;
+    font-size: 6em;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.row {
+    display: block;
+    margin: 0;
+    padding: 0;
+    min-height: 300px;
+}
+
+.row .box2 {
+    display: block;
+    width: 49%;
+    padding: 0px;
+    margin: 0;
+    min-height: 300px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.row .box2 div {
+    background-color: #fff;
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+		linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    background-size: 100% 1.2em;
+    min-height: 300px;
+}
+
+.floating {
+    float: left;
+    width: 49%;
+    box-sizing: border-box;
+    min-width: 340px;
+    max-width: 720px;
+    display: inline-block;
+    line-height: 1.5em;
+    margin: 10px .5% 10px .5%;
+    background-color: #fff;
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 82px, transparent 82px),
+		linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    background-size: 100% 1.2em;
+    min-height: 300px;
+}
+
+.floating p {
+    text-align: justify;
+    margin: 1em 1em 0 2.5em;
+    color: gray;
+    font-weight: 200;
+    font-family: 'AlphaMack AOE';
+    font-weight: normal;
+    opacity: .9;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.box-shadow-preview {
+    position: relative;
+    background-color: #FFFFFF;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    border-radius: 0px;
+    box-shadow: 0px 1px 4px 0px #99A3AD, 0px 0px 40px #EEEEEE;
+}
+
+.box-shadow-preview:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    bottom: 0px;
+    left: 10px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 20px #2A2E31;
+}
+
+.box-shadow-preview:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    bottom: 0px;
+    left: 10px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 20px #2A2E31;
+}
+
+.leftfloat {
+    float: left;
+    width: 50%;
+    margin-right: 2%;
+}
+
+.leftfloat h4 {
+    text-align: center;
+    color: #cf730b;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.imgfloat {
+    clear: both;
+    overflow: auto;
+}
+
+.imgfloat p {
+    color: rgb(100,100,100);
+    line-height: 2em;
+    line-height: 28px;
+}
+
+.gif {
+    border-radius: 100%;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 20%;
+    font-size: 1.7vw;
+    color: white;
+    text-shadow: 0px 1px 2px black;
+    left: 20%;
+    text-align: center;
+    padding: 4%;
+    background: rgba(0,0,0,.3);
+    border-radius: 100%;
+}
+
+.absolute h3 {
+    margin-bottom: 0;
+}
+
+.absolute span {
+    display: block;
+    font-size: 1.2vw;
+}

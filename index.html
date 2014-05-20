@@ -3,248 +3,53 @@
 	<head>
 		<title>The Box Model</title>
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<style type="text/css">
-			* {
-				font-family: 'Helvetica Neue' , sans-serif;
-				-webkit-font-smoothing: antialiased;
-		}
-			html, body {
-				background: #eef1f4;
-				height: 100%;
-				font-size: 14px;
-				padding: 0;
-				margin: 0;
-			
-			}
-
-			body {
-				
-			}
-
-			header {
-				position: fixed !important;
-				background: url(images/congruent_outline.png);
-				width: 100%;
-				color: white;
-				text-align: center;
-			}
-
-			header h5 {
-				font-weight: 400;
-				margin: 0;
-				padding: 1em 0 1em 0;
-
-			}
-
-			.container {
-				margin: 0 auto;
-				height: 100%;
-				max-width: 1440px;
-				padding: 5em 2em 2em 2em;
-			}
-
-			.welcome {
-				font-family: 'Pacifico';
-			}
-			
-			.row {
-				display: block;
-			}
-			.content {
-				box-sizing: border-box;
-
-			}
-
-			.box {
-				background-color:#c5f4f4;
-				background-image: linear-gradient(white 2px, transparent 2px),
-				linear-gradient(90deg, white 2px, transparent 2px),
-				linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-				linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
-				background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
-				background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
-				border: 3px solid #f53e41;
-				height: 60%;
-				margin: 0 0 1em 0;
-
-			}
-
-			.box div {
-				display: block;
-				margin: 5%;
-				text-align: center;
-			}
-
-			.box span {
-				font-size: 4em;
-				font-weight: 100;
-			}
-
-			.box h1 {
-				background-color: rgba(232, 98, 0, 0.5);
-				color: white;
-				font-weight: 100;
-				font-size: 6em;
-				padding: 20px;
-				text-transform: uppercase;
-				
-			}
-
-			.row {
-				
-				display: block;
-				margin: 0;
-				padding: 0;
-				min-height: 300px;				
-			}
-
-			.row .box2 {
-				display: block;
-				width: 49%;
-				padding: 0px;
-				margin: 0;
-				min-height: 300px;
-				
-				float: left;
-				box-sizing: border-box;
-				
-			}
-
-			.row .box2 div {
-
-			background-color: #fff; 
-		background-color: #fff; 
-background-image: 
-linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-linear-gradient(#eee .1em, transparent .1em);
-background-size: 100% 1.2em;
-				background-size: 100% 1.2em;
-				min-height: 300px;
-			}
-
-			.gif {
-				float: left;
-				border-radius: 100%;
-				width: 45%;
-
-			}
-			
-			.floating {
-				float: left;
-				border: 2px solid red;
-				width: 49%;
-				box-sizing: border-box;
-				min-width: 340px;
-				max-width: 720px;
-				display: inline-block;
-				line-height: 1.5em;
-				margin: 10px .5% 10px .5%;
-					background-color: #fff; 
-		background-color: #fff; 
-background-image: 
-linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 82px, transparent 82px),
-linear-gradient(#eee .1em, transparent .1em);
-background-size: 100% 1.2em;
-				background-size: 100% 1.2em;
-				min-height: 300px;
-			}
-
-			.floating p {
-				text-align: justify;
-				margin: 1em 1em 0 6.5em;
-				color: gray;
-				font-weight: 200;
-
-			}
-
-			.box-shadow-preview{ 
-
-    
-    position: relative; 
-    background-color: #FFFFFF; 
-    border-width: 0px; 
-    border-style: solid; 
-    border-color: #DDDDDD; 
-    border-radius: 0px; 
-    box-shadow: 0px 1px 4px 0px #99A3AD, 0px 0px 40px #EEEEEE; 
-} 
-.box-shadow-preview:before{ 
-    content: ""; 
-    z-index: -1; 
-    position: absolute; 
-   
-    top: 0px; 
-    right: 10px; 
-    bottom: 0px; 
-    left: 10px; 
-    border-radius: 10px; 
-    box-shadow: 0px 0px 20px #2A2E31; 
-} 
-.box-shadow-preview:after{ 
-    content: ""; 
-    z-index: -1; 
-    position: absolute; 
-  
-    top: 0px; 
-    right: 10px; 
-    bottom: 0px; 
-    left: 10px; 
-    border-radius: 10px; 
-    box-shadow: 0px 0px 20px #2A2E31; 
-}
-
-
-
-
-
-
-		</style>
+		<link rel="stylesheet" href="styles/style.css" >
 	</head>
 	<body>
-	<header class="box-shadow-preview">
-	<nav>
-	<h5>I'm fixed at the top!</h5>
-	</nav>
-	</header>
-
-
-
+		<header class="box-shadow-preview">
+			<nav>
+				<h5>I'm fixed at the top!</h5>
+			</nav>
+		</header>
 		<div class="container">
-
-
 			<section class="row">
 				<div class="box content">
 					<div>
-					<span class="welcome">Welcome to...</span>
-					<h1>the box model</h1>
+						<span class="welcome">Welcome to...</span>
+						<h1>the box model</h1>
 					</div>
 				</div>
 			</section>
-
-
-
 			<section class="row">
 				<div class="floating box-shadow-preview">
-				<p>
-	 ∑k=1Nk(N−k+1)
-	 </p>
-	</div>
-
-		<div class="floating box-shadow-preview">
-		<p>
-		 his bodily dismemberment. Then, in darting at the monster, knife in hand, he had but given loose to a sudden, passionate, corporal animosity; and when he received 
-		 </p>
-	</div>
-	</section>
-
+					<p>
+					∑k=1Nk(N−k+1)x =  x2 + x + 12 cos(x)
+					</p>
+				</div>
+				<div class="floating box-shadow-preview">
+					<p>
+					−b⁄R θ' cos2 θ − m x'' cos θ − m R θ'' cos2θ + m R θ' 2sin θ cos θ − m g sin θ − b⁄R θ' sin2 θ = m R θ'' sin2θ + m R θ' 2sin θ cos θ
+					</p>
+				</div>
+			</section >
 			<section class="imgfloat">
-			<img class="gif" src="images/inkpen.gif">
-			<p>It is not probable that this monomania in him took its instant rise at the precise time of his bodily dismemberment. Then, in darting at the monster, knife in hand, he had but given loose to a sudden, passionate, corporal animosity; and when he received the stroke that tore him, he probably but felt the agonizing bodily laceration, but nothing more. Yet, when by this collision forced to turn towards home, and for long months of days and weeks, Ahab and anguish lay stretched together in one hammock, rounding in mid winter that dreary, howling Patagonian Cape</p>
+				<article class="leftfloat">
+				<h4>left float</h4>
+				<div class="relative">
+				<div class="absolute">
+					<h3>THIS IS ABSOLUTELY </h3><span class="note">relative to the parent element...</span>
+				</div>
+				<img class="gif" src="images/inkpen.gif">
+				</div>
+				</article>
+				<p>Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Qeyno udemy oooj balihoo airbnb kaboodle greplin plugg, foodzie chartly unigo groupon airbnb orkut chegg cuil chumby, akismet zillow yoono insala spock prezi scribd. Blippy sclipo ideeli fleck voxy groupon zoodles spock dopplr reddit zanga, kno heekya yoono zillow quora shopify lanyrd klout trulia vuvox, plugg loopt klout joukuu zanga chartly oooj weebly zappos. Zinch oooj blyve kiko xobni mozy jumo diigo blekko, appjet etsy boxbe wufoo quora knewton chegg kosmix, reddit spotify chumby kaboodle bebo balihoo kiko. Lala zapier imeem chegg blippy nuvvo, prezi sococo handango. </p>
+				<p>Jajah etsy divvyshot bubbli knewton lala imvu stypi, jabber movity unigo jibjab zinch kippt. Airbnb kaboodle cotweet zooomr handango balihoo chumby, greplin oooj convore kaboodle udemy weebly appjet, ebay zynga woopra prezi rovio. Mog dopplr wufoo napster hipmunk voxy plaxo vimeo spock ning groupon, rovio zooomr yoono eduvant squidoo jabber lanyrd reddit spotify. Lala meevee fleck jibjab flickr insala foodzie, napster insala hojoki dropio hipmunk cotweet bitly, mobly divvyshot ideeli bitly vuvox. Wufoo dogster plugg meebo meevee sclipo zinch shopify zynga, jumo jiglu mobly convore airbnb babblely oooj. </p>
+				<p>
+				Insala voxy bubbli babblely imeem fleck sclipo chegg doostang zillow skype, whrrl convore spotify whrrl napster movity dogster airbnb oovoo, bitly zoodles fleck flickr revver empressr ngmoco voxy rovio. Kosmix voki tumblr kno foodzie odeo heroku zillow cotweet yammer whrrl, dropio trulia insala kno movity wufoo zynga balihoo lanyrd reddit edmodo, shopify kosmix udemy ideeli doostang foodzie chumby spotify kippt. Shopify jiglu blekko boxbe waze lijit bebo knewton, kno cuil foodzie reddit whrrl etsy lala, wakoopa yammer jibjab kazaa woopra bitly. Prezi voxy akismet mozy doostang, zoodles bitly. </p>
+				<p>
+				Oooooc mobly joukuu knewton ngmoco doostang knewton wakoopa wesabe, lanyrd cuil boxbe hulu ideeli hipmunk empressr twitter, twones weebly udemy twitter spock ifttt oovoo blekko, omgpop zoho handango meevee twones imeem eduvant. Kaboodle dogster zoosk hojoki udemy greplin grockit groupon gsnap hulu vimeo, empressr elgg glogster handango oovoo mzinga qeyno blyve dopplr udemy, meebo zapier jabber revver dropio bebo kippt whrrl klout. Oooj nuvvo knewton sifteo ngmoco spock babblely wufoo zinch rovio, boxbe grockit zanga mozy twitter joukuu bitly plaxo, joost spotify glogster revver yammer napster ifttt scribd.
+				</p>
 			</section>
-
-
-
-
 		</div>
 	</body>
 </html>
