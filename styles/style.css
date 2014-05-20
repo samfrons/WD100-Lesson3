@@ -6,6 +6,7 @@
 * {
     font-family: 'Helvetica Neue' , sans-serif;
     -webkit-font-smoothing: antialiased;
+    /*border: 1px solid #f15f66 !important;*/
 }
 
 html, body {
@@ -14,6 +15,7 @@ html, body {
     font-size: 14px;
     padding: 0;
     margin: 0;
+    overflow: auto;
 }
 
 body {
@@ -40,7 +42,9 @@ header h5 {
     height: 100%;
     max-width: 1440px;
     padding: 5em 2em 2em 2em;
+
 }
+
 
 .welcome {
    color: gray;
