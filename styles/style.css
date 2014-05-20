@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'AlphaMack AOE', script;
-	src: url(fonts/ALPHMA.TTF);
+	font-family: 'AlphaMack AOE';
+	src: url('fonts/alphma.ttf');
 }
 
 * {
