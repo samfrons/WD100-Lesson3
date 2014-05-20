@@ -192,8 +192,7 @@ header h5 {
 }
 
 .imgfloat {
-    clear: both;
-    overflow: auto;
+    float: left;
 }
 
 .imgfloat p {
